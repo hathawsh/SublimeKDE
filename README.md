@@ -2,7 +2,7 @@
 SublimeKDE
 ==========
 
-This humble Sublime Text plugin lets you open files using the superior KDE
+This humble Sublime Text plugin lets you open files using the KDE
 file dialog. The "open_with_kde" command is bound by default to Ctrl+Shift+O.
 
 The MIT license applies.

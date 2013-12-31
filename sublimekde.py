@@ -35,6 +35,6 @@ class DialogThread(threading.Thread):
         if not self.process.returncode:
 
             def run_callback():
-                self.callback(stdout_data.strip())
+                self.callback(stdout_data.strip().decode('utf-8'))
 
             sublime.set_timeout(run_callback, 0)
