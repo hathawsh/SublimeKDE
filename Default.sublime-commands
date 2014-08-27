@@ -2,5 +2,9 @@
     {
         "caption": "Open file with KDE",
         "command": "open_with_kde"
+    },
+    {
+        "caption": "Open Konsole",
+        "command": "open_konsole"
     }
 ]

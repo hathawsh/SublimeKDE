@@ -1,3 +1,4 @@
 [
-    { "keys": ["ctrl+shift+o"], "command": "open_with_kde"}
+    { "keys": ["ctrl+shift+o"], "command": "open_with_kde"},
+    { "keys": ["alt+k"], "command": "open_konsole"}
 ]

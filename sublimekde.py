@@ -24,6 +24,18 @@ class OpenWithKdeCommand(sublime_plugin.WindowCommand):
         self.window.open_file(file_name)
 
 
+class OpenKonsoleCommand(sublime_plugin.WindowCommand):
+    def run(self):
+        cwd = os.getcwd()
+        view = self.window.active_view()
+        if view:
+            fn = view.file_name()
+            if fn:
+                cwd = os.path.dirname(fn)
+
+        subprocess.Popen(['konsole', '--separate', '--workdir', cwd])
+
+
 class DialogThread(threading.Thread):
     def __init__(self, process, callback):
         self.process = process
